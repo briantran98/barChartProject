@@ -3,17 +3,39 @@
 
 <head>
   <title>Bar Chart</title>
-  <!-- <link rel="stylesheet" href="assets/stylesheet/main.css"> -->
-  </script>
+  <link rel="stylesheet" href="assets/stylesheet/main.css">
   <script src="assets/jquery-3.5.1.js"></script>
   <script src="assets/drawBarChart.js"></script>
+
 </head>
 
 <body>
-  <h1 class="intro">Bar Chart Project</h1>
-  <p id="test" class="intro">Some text that will disappear when you click that button</p>
-  <p>This text will also disappear</p>
-  <button id="clickMe" class="button">Click Me!</button>
+  <div id="barGraph" style="display: none;">
+    <h1 id="barTitle">Bars</h1>
+    <div class="yAxis">
+      <div class="bar" id="bar1">Text</div>
+    </div>
+    <div class="xAxis"></div>
+<!--   
+    <form action="/action_page.php">
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+      <input type="submit">
+    </form>
+   -->
+    <p>Set Width: <input type="text" id="barWidth" name="value"></p>  
+  </div>
+  <div class="start">  
+    <h1 class="start"><b>Click the button to get started!</b></h1>
+    <p class="start">Lets get started on making some graphs!</p>
+    <p class="start">Enter in some values to get started</p>
+    <label for="data">Data:</label>
+    <input class="graphSetup" type="text" id="data" value="1,2,3,4,5">
+    <button id="getStarted" style="margin-left: 50%;">Start</button>
+  </div>
+
+
+
 </body>
 
 </html>
